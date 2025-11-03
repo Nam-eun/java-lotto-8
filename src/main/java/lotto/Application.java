@@ -11,5 +11,9 @@ public class Application {
         LottoStart lottoStart = new LottoStart(inputMoney);
         lottoStart.printRandomLottos();
 
+        int[] winningNumbers = Input.inputWinningNumbers();
+        int bonusNumber = Input.inputBonusNumber();
+        lottoStart.lottoMatcher(winningNumbers, bonusNumber);
+
     }
 }
